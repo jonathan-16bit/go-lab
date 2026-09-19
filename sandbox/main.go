@@ -2,10 +2,13 @@ package main
 
 import (
 	"fmt"
-	"math"
 )
 
+// Return types AFTER variable name
+func mult(a int, b int) int {
+	return a * b
+}
+
 func main() {
-	// Exported names begin with uppercase
-	fmt.Println("The value of pi: ", math.Pi)
+	fmt.Println("Multiplication of 2 and 42 produces: ", mult(2, 42));
 }
