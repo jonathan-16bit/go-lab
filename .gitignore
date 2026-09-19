@@ -32,4 +32,4 @@ go.work.sum
 # .vscode/
 
 # Go binary for sandbox/
-/sandbox
+/sandbox/sandbox
