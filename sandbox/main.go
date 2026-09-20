@@ -17,7 +17,11 @@ func factorial_for(n int) int {
 func factorial_while(n int) int {
 	fact, i := 1, 1
 
-	for i <= n {
+	for {
+		if i > n {
+			break
+		}
+
 		fact *= i
 		i += 1
 	}
