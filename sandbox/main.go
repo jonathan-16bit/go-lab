@@ -5,12 +5,15 @@ import (
 )
 
 func main() {
+	const Pi float64 = 3.14
+	fmt.Println("I like", Pi)
+
+	/*
 	// Type inference
 	var w int = 42
 	v := w
 	fmt.Printf("v (%v) is of type: %T\n", v, v)
 
-	/*
 	// Type conversions
 	var fl float64 = -1.2
 	var x int = int(fl)
