@@ -5,14 +5,18 @@ import (
 )
 
 func main() {
+	// Type inference
+	var w int = 42
+	v := w
+	fmt.Printf("v (%v) is of type: %T\n", v, v)
 
+	/*
 	// Type conversions
 	var fl float64 = -1.2
 	var x int = int(fl)
 	var u uint64 = uint64(x)
 	fmt.Println(fl, x, u)
 
-	/*
 	// Zero values for non-initialized vars
 	var i int
 	var f float64
