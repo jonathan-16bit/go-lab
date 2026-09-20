@@ -5,10 +5,17 @@ import (
 )
 
 func main() {
+	// Numeric constants are high-precision values
+	const bigNum = 1 << 100
+	fmt.Println(float64(bigNum))
+
+	// Compiler complains, because bigNum overflows uint64
+	// fmt.Println(uint64(bigNum))
+
+	/*
 	const Pi float64 = 3.14
 	fmt.Println("I like", Pi)
 
-	/*
 	// Type inference
 	var w int = 42
 	v := w
