@@ -4,19 +4,14 @@ import (
  "fmt"
 )
 
-type Vertex struct {
-	X, Y int
-}
-
 func main() {
-	// Order of named fields is irrelevant
-	v1 := Vertex{4, 2}
-	v2 := Vertex{Y: 3, X: 4}
+	// [N]T : N values of type T
+	// Array length is part of type, so resizing is not possible
+	var digits [10]int 
 
-	v4 := Vertex{Y: 1}  // X: 0
-	v3 := Vertex{}  // Both are 0
+	for i := 0; i <= 9; i++ {
+		digits[i] = i
+	}
 
-	v5 := &Vertex{4, 4}
-
-	fmt.Println(v1, v2, v3, v4, v5)
+	fmt.Println(digits)
 }
