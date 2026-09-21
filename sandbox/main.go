@@ -14,4 +14,10 @@ func main() {
 	}
 
 	fmt.Println(digits)
+
+	// Slices are in the format [low: high] (half-open range)
+	var lower []int = digits[0:5]
+	var upper []int = digits[5:10]
+
+	fmt.Println(lower, upper)
 }
