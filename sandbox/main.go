@@ -5,6 +5,11 @@ import (
 )
 
 func main() {
-	defer fmt.Println("went up the hill")
-	fmt.Printf("Jack and Jill ")
+	fmt.Println("Go experiment")
+
+	for i := 0; i <= 9; i++ {
+		defer fmt.Printf("%v\n", i)
+	}
+
+	fmt.Println("Count down: ")
 }
